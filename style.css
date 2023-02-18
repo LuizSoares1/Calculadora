@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
@@ -11,9 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("max1.jpg");
-    background-size: 20in;
-    background-position: center;
+    background: linear-gradient(#ffccff, #ead7ff);
 }
 
 .calculator {
@@ -21,9 +19,8 @@ body {
     width: 340px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
-    -15px -15px 20px rgba(43, 43, 43, 0.733);
-    border: 2px solid black;
+    border: 3px solid black;
+    background: #e5ccff;
 }
 
 .calculator .buttons {
@@ -38,24 +35,21 @@ body {
     overflow: none;
     width: 100%;
     text-align: end;
-    color: #ffffff;
+    color: #000000;
     height: 100px;
     line-height: 100px;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
-    inset -5px -5px 20px rgba(0, 0, 0, 0.733);
     border-radius: 10px;
     margin-bottom: 12px;
     padding: 0 20px;
     font-size: 2em;
     font-weight: 500;
-    border: 2px solid black;
+    border: 3px solid black;
+    background: #ffccff;
 }
 
 .calculator .buttons span {
     position: relative;
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
-    -5px -5px 20px rgb(0, 0, 0);
     margin: 10px;
     cursor: pointer;
     user-select: none;
@@ -65,95 +59,85 @@ body {
     align-items: center;
     font-size: 1.2em;
     color: #666;
-    border: 2px solid #b9b9b9;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
-    -5px -5px 10px #fff;
+    border: 3px solid #000000;
     border-radius: 10px;
-    color: #fff;
+    color: #000000;
+    background: #fee0fe;
+    font-size: 25px;
+
 }
 
 .calculator .buttons span:active {
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1)
-    inset -5px -5px 10px #fff;
     color: #000000;
+    background: #ffffff;
 }
 
 .calculator .buttons span#clear {
     grid-column: span 2;
     background: #f44336;
     color: #fff;
-    border: 2px solid #b9b9b9;
+    border: 3px solid #000000;
 }
 
 .calculator .buttons span#plus{
     grid-row: span 2;
     color: #fff;
-    border: 2px solid #b9b9b9;
+    border: 3px solid #000000;
+    background: rgb(85, 85, 255);
 }
-
 
 .calculator .buttons span#equal{
     grid-row: span 2;
     color: #fff;
-    border: 2px solid #b9b9b9;
+    border: 3px solid #000000;
+    background: rgb(123, 106, 208);
+}
+
+.calculator .buttons span#minus{
+    color: #fff;
+    border: 3px solid #000000;
+    background: rgb(85, 85, 255);
+}
+
+.calculator .buttons span#time{
+    color: #fff;
+    border: 3px solid #000000;
+    background: rgb(85, 85, 255);
+}
+
+.calculator .buttons span#division{
+    color: #fff;
+    border: 3px solid #000000;
+    background: rgb(85, 85, 255);
+}
+
+.calculator .buttons span#comma{
+    color: #000000;
+    border: 3px solid #000000;
+    background: #ffd3ff;
+}
+
+.calculator .buttons span#point{
+    color: #000000;
+    border: 3px solid #000000;
+    background: #ffd3ff;
 }
 
 .calculator .buttons span#clear:active,
 .calculator .buttons span#plus:active,
-.calculator .buttons span#equal:active
+.calculator .buttons span#equal:active,
+.calculator .buttons span#minus:active,
+.calculator .buttons span#time:active,
+.calculator .buttons span#division:active
 {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
-    inset -5px -5px 10px #fff;
     inset: 5px 5px 10px rgba (0, 0, 0, 0.1);
-    color: #666;
+    color: #000000;
 
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
-
-    body {
-        background-image: url("max2.jpeg");
-        background-size: 7in;
-    }
-
-    .calculator {
-        border: 2px solid #ffffff;
-    }
-
-    .calculator .buttons #value {
-        border: 2px solid white;
-    }
-
-    .calculator .buttons span {
-        color: white;
-        -webkit-text-stroke: 0.3px #000000;
-    }
-
-
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-
-    body {
-        background-image: url("max2.jpeg");
-        background-size: 9in;
-        size: 200%;
-        size-adjust: 125%;
-    }
-
-    .calculator {
-        border: 2px solid #ffffff;
-    }
-
-    .calculator .buttons #value {
-        border: 2px solid white;
-    }
-
-    .calculator .buttons span {
-        color: white;
-        font-size: 2em;
-        -webkit-text-stroke: 0.4px #000000;
-    }
-
-
+.calculator .buttons span#comma:active,
+.calculator .buttons span#point:active
+{
+    inset: 5px 5px 10px rgba (0, 0, 0, 0.1);
+    background: #ffffff;
 }
